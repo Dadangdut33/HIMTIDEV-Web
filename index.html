@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="index.css" />
+		<!-- CSS only -->
+		<!-- <link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+			crossorigin="anonymous"
+			/> -->
+
+		<!-- ini import css --->
+
+		<title>Belajar Web</title>
+	</head>
+	<body>
+		<div class="flex-row">
+			<div class="flex-column" style="margin-top: 40px">
+				<h1 class="red margin-header">Belajar Web</h1>
+				<h1 style="display: none">Belajar Web</h1>
+			</div>
+			<h2>test</h2>
+
+			Hello world
+			<a href="https://www.mozilla.org/" title="The Mozilla homepage">favorite website</a>
+		</div>
+		<div class="ini class gabung">
+			<div style="margin-left: auto; margin-right: auto">
+				<h3>Halo</h3>
+				<div class="div-maxed">
+					<p>adsadasdas das dasdas dasd asdasdasdad as dasdasdadadad asd sad asd as da</p>
+				</div>
+			</div>
+		</div>
+
+		<button id="click-me">Tekan saya</button>
+		<button id="click-me2">Tekan saya yang kedua</button>
+
+		<script>
+			const clickMe = document.getElementById("click-me");
+			const clickMe2 = document.getElementById("click-me2");
+
+			function clickMeFunction() {
+				console.log("Hello world!");
+			}
+
+			const clickMeFunctionArrow = () => {
+				console.log("Hello world dari arrow function");
+			};
+
+			clickMe.addEventListener("click", () => {
+				console.log("Hello world dari event listener");
+				alert("Hello world dari event listener");
+			});
+
+			clickMe2.addEventListener("click", clickMeFunctionArrow);
+			console.log("test");
+
+			// variable
+			var tes = "1";
+			if (tes == 1) {
+				console.log("atas");
+			} else {
+				console.log("bawah");
+			}
+
+			// arrays
+
+			for (let index = 0; index < 5; index++) {
+				array[index] = index;
+				array.push(index);
+			}
+
+			// // loop
+			// for (let i = 0; i < 10; i++) {
+			// 	console.log(i);
+			// }
+
+			// console.log("========");
+
+			// // loop forEach
+			// var array = [1, 2, 3, 4, 5];
+			// array.forEach(function (item) {
+			// 	console.log(item);
+			// });
+
+			// console.log("========");
+			// // for in
+			// var obj = {
+			// 	name: "John",
+			// 	age: 30,
+			// };
+
+			// for (var key in obj) {
+			// 	console.log(key);
+			// }
+
+			// console.log("========");
+			// // for of
+			var array = [1, 2, 3, 4, 5];
+			for (var item of array) {
+				console.log(item);
+			}
+
+			// console.log("========");
+
+			// map loop
+			const arrayss = [1, 2, 3, 4, 5];
+			arrayss.map(function (item) {
+				console.log(item);
+			});
+
+			// // new Map
+			// let mapps = new Map();
+
+			// mapps.set("name", "John");
+			// mapps.set("age", 30);
+
+			// console.log("========");
+		</script>
+	</body>
+</html>

@@ -1,0 +1,44 @@
+
+
+h1 {
+  text-align: center;
+  color: blue;
+}
+
+.header {
+  color: red;
+}
+
+#header {
+  color: greenyellow
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.margin-header {
+  margin: 10px;
+}
+
+.color-header {
+  color: red;
+}
+
+.div-maxed {
+  max-width: 300px;
+  max-height: 40px;
+  overflow: scroll;
+
+}
+
+.ini.class.gabung {
+  display: flex;
+  flex-direction: row;
+}
