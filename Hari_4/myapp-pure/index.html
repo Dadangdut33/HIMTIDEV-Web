@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My App</title>
+</head>
+
+<body>
+  <div>
+    <h1>My App</h1>
+    <p>This is my app.</p>
+
+
+    <p id="counter">0</p>
+
+    <button id="increase">Increase</button>
+    <button id="decrease">Decrease</button>
+  </div>
+
+  <script>
+    var increase = document.getElementById('increase');
+    var decrease = document.getElementById('decrease');
+    var counter = document.getElementById('counter')
+    increase.addEventListener('click', function () {
+      counter.innerHTML = parseInt(counter.innerHTML) + 1;
+    });
+    decrease.addEventListener('click', function () {
+      counter.innerHTML = parseInt(counter.innerHTML) - 1;
+    });
+  </script>
+</body>
+
+</html>
