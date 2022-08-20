@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { Link, useParams } from "react-router-dom";
+import { API_V1_URL } from "../../utils/constant";
 export function Edit() {
 	const [title, setTitle] = useState("");
 	const [content, setContent] = useState("");
@@ -7,7 +8,7 @@ export function Edit() {
 	const { _id } = useParams();
 
 	const submit = async () => {
-		const fetchData = await fetch(`http://localhost:4000/api/v1/note/${_id}`, {
+		const fetchData = await fetch(`${API_V1_URL}/note/${_id}`, {
 			method: "PUT",
 			headers: {
 				"Content-Type": "application/json",

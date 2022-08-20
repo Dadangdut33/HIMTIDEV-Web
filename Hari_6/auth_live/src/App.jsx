@@ -1,6 +1,7 @@
 import { Add, Notes, Edit, Page_404, Login, Register } from "./components";
 import { Routes, Route } from "react-router-dom";
 import { useState, useEffect } from "react";
+import { API_V1_URL } from "./utils/constant";
 
 // App.js
 function App() {
@@ -9,7 +10,7 @@ function App() {
 	useEffect(() => {
 		// fetch from api check if user is logged in
 		const fetchData = async () => {
-			const data = await fetch("http://localhost:4000/api/v1/auth/check", {
+			const data = await fetch(`${API_V1_URL}/auth/check`, {
 				method: "GET",
 				headers: {
 					"Content-Type": "application/json",

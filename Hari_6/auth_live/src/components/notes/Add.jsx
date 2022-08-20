@@ -1,12 +1,13 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import { API_V1_URL } from "../../utils/constant";
 export function Add() {
 	const [title, setTitle] = useState("");
 	const [content, setContent] = useState("");
 	const [completed, setCompleted] = useState(false);
 
 	const submit = async () => {
-		const fetchData = await fetch("http://localhost:4000/api/v1/note", {
+		const fetchData = await fetch(`${API_V1_URL}/note`, {
 			method: "POST",
 			headers: {
 				"Content-Type": "application/json",
